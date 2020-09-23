@@ -32,7 +32,7 @@ def showBoard():
 def checkValid(selection):
   valid = False
   if selection<=2 and selection>=0:
-    if gameboard[0][selection-3] == '-':
+    if gameboard[0][selection] == '-':
       valid = True
   elif selection<=5 and selection>=3:
     if gameboard[1][selection-3] == '-':
@@ -145,8 +145,6 @@ def checkGameOver():
     return True
   else:
     return False
-
-
 
 
 # the actual game which keeps looping, breaks out when the game ends in a win or a tie
